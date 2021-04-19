@@ -1,0 +1,15 @@
+
+ul{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva, Verdana, sans-serif';
+    padding-bottom: 10px;
+}
+h1{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 350%;
+    /* padding-top: 10px; */
+    color: whitesmoke;
+    padding-left: 20px;
+}    
+a{
+    color: white;
+}

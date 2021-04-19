@@ -1,0 +1,37 @@
+<app-header></app-header>
+<div id="masthead">  
+    <div class="container" >
+      <div class="row">
+        <div >
+         <br><br> <h1 style="font-family: 'Courier New', Courier, monospace; color: white; font-size: 80px;">BOOKSY</h1><br><br>
+        </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+  
+  <hr id="hh1"><br><br>
+  <div style="background-color: black;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"> 
+          <form class="signup2" (ngSubmit)="Adddata()" method="POST"  enctype="multipart/form-data" style="border:1px solid #ccc">
+              <div class="container2">
+                <h1>UPDATE A BOOK</h1>
+                <hr><br><br>
+                <label for="text"><b>title :</b></label>
+                <input type="text" placeholder="Enter title"  [(ngModel)]="Item.title" name="title" required><br><br>
+                <label for="text"><b>more :</b></label>
+                <input type="text" name="more" [(ngModel)]="Item.more" required><br><br>
+                <label for="text"><b>add image :</b></label>
+                <input type="file" name="img1" id="input" onchange="showFile()" accept="image/*"><br><br>
+                <div class="clearfix">
+                  <button type="submit" id="submit" class="signupbtn button1">Done</button>
+                </div>
+              </div>
+            </form> 
+         </div><!--/col-12-->
+    </div>
+  </div>
+                                                  
+  </div>     

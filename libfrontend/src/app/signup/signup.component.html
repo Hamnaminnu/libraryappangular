@@ -1,0 +1,43 @@
+<div id="masthead">  
+    <div class="container" >
+      <div class="row">
+        <div >
+         <br><br> <h1 style="font-family: 'Courier New', Courier, monospace; color: white; font-size: 80px;">Discover Books You'll Love</h1><br><br>
+        </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+  
+  <hr id="hh1"><br><br>
+  <div style="background-color: black;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"> 
+        <form class="signup" (ngSubmit)="Adddata()" style="border:1px solid #ccc" submit="return Validate();">
+          <div class="container2">
+            <h1>Sign Up</h1>
+           <br><br><hr>
+            <label for="text"><b>Name</b></label>
+            <input type="text" [(ngModel)]="user.uname" placeholder="Enter name (without space)" name="name" id="a2" required>
+            <label for="email"><b>Email</b></label>
+            <input id="email" type="text" placeholder="Enter Email" name="email" required>
+            <label for="phonenumbr"><b>Mobile Number</b></label>
+            <input id="num" type="text" placeholder="Enter Number" name="phonenumbr" required>
+            <label for="psw"><b>Password</b></label><span id="strength"></span>
+            <input id="password" [(ngModel)]="user.password" type="password" placeholder="Enter Password" name="psw" onkeyup="return ValidatePassword();" required>
+            <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> 
+            By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>
+            </label>
+            <div class="clearfix">
+              <button type="button" class="cancelbtn1">Cancel</button>
+              <button type="submit" id="submit" class="signupbtn button1">Sign Up</button>
+            </div>
+          </div>
+        </form>
+         </div><!--/col-12-->
+    </div>
+  </div>
+                                                  
+  </div>                                 

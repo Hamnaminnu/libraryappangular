@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div id="masthead">  
+    <div class="container" >
+      <div class="row">
+        <div >
+         <br><br> <h1 style="font-family: 'Courier New', Courier, monospace; color: white; font-size: 80px;">BOOKSY</h1><br><br>
+        </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+  
+  <hr id="hh1"><br><br>
+  <div style="background-color: black;" *ngFor='let Item of Item'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"> 
+            <div class="row">    
+              <br>
+              <div class="col-md-2 col-sm-3 text-center">
+                <a class="story-title" href=""><img alt="" src="{{Item.img}}" style="width:100px;height:100px" class="img-circle"></a>
+              </div>
+              <div class="col-md-10 col-sm-9">
+                <h3>{{Item.title}}</h3><a href="updatebook" id="b1">Update</a><br>
+                <h4>{{Item.author</h4><a href="deletebook" id="b1">Delete</a><br>
+                <h5>{{Item.genre}</h5><br>
+                <h5>{{Item.more}</h5><br>
+              </div>
+            </div>
+            <hr id="hh">        
+      </div><!--/col-12-->
+    </div>
+  
+  </div>                                              
+  </div> 

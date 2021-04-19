@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div id="masthead">  
+    <div class="container" >
+      <div class="row">
+        <div >
+        <br><br> <h1 style="font-family: 'Courier New', Courier, monospace; color: white; font-size: 80px;">AUTHORS</h1><br><br>
+        </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+  
+  <hr id="hh1"><br><br>
+  <div style="background-color: black;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"> 
+          <form class="signup1" (ngSubmit)="Adddata()" action="" method="GET" style="border:1px solid #ccc">
+              <div class="container2"><br><br>
+                <h1>DELETE AUTHOR</h1>
+                <hr><br><br><br>
+                <label for="text"><b>author name :</b></label>
+                <input type="text" placeholder="Enter title"[(ngModel)]="Item.author"  name="author" required><br><br>
+                
+                <div class="clearfix">
+                  <button type="submit" id="submit" class="signupbtn button1">Done</button>
+                </div>
+              </div>
+            </form> 
+         </div><!--/col-12-->
+    </div>
+  </div>
+                                                  
+  </div>                                                                              
+  
